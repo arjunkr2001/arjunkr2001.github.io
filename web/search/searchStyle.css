@@ -48,11 +48,11 @@ body{
 }
 
 .box:hover > .txt{
-	width:262px;
+	width:250px;
 }
 
 .txt:focus{
-	width: 265px;
+	width: 245px;
 }
 
 .box:hover > .btn{
