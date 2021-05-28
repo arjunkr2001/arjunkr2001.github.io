@@ -88,9 +88,18 @@
         #card h6{
             margin: 5px;
         }
+        h1{
+            margin: 0px;
+            color: blue;
+            top: 0px;
+            position: absolute;
+            font-family: sans-serif;
+            font-size: 80px;
+        }
     </style>
 </head>
 <body>
+    <h1>e-Med</h1>
     <div class="search">
         <input type="text" id="srch" placeholder="type to search...">
         <a class="btn" href="#">
@@ -127,6 +136,7 @@
     function serch(){
         document.querySelector('div.tabs').style.display = "flex";
         document.getElementById('card').style.display = "none";
+        document.querySelector('h1').style.display = "none";
         var trm = document.getElementById('srch').value;
         document.getElementById('nms').src = "https://www.netmeds.com/catalogsearch/result?q="+escape(trm);
         document.getElementById('mdscp').src = "https://search.medscape.com/search/?q="+escape(trm);
